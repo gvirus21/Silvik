@@ -21,10 +21,12 @@ export const NavContainer = styled.div`
 `;
 
 export const Logo = styled.h1`
+  font-family: montserrat;
   font-size: 2em;
   font-weight: 700;
   color: #0f1108;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  letter-spacing: 3px;
 `;
 
 export const LogoDot = styled.span`
@@ -63,7 +65,22 @@ export const NavUl = styled.ul`
 `;
 
 export const NavLi = styled.li`
-  font-size: 1.2em;
   padding: 1em;
-  color: #0f1108;
+`;
+
+export const NavLink = styled.a`
+  font-size: 1em;
+  font-family: montserrat;
+  /* color: #0f1108; */
+  color: ${({ active }) => (active ? "#000" : "#444444")};
+  font-weight: ${({ active }) => (active ? "600" : "400")};
+  cursor: pointer;
+  transition: 0.2s all ease-in-ease-in-out;
+
+  &:hover {
+    color: #777;
+  }
+  &:active {
+    color: #000;
+  }
 `;

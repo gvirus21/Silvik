@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
-import { Link as LinkS } from "react-scroll";
 
 export const SidebarContainer = styled.div`
   position: fixed;
@@ -52,7 +51,7 @@ export const SidebarMenu = styled.ul`
   }
 `;
 
-export const SidebarLink = styled(LinkS)`
+export const SidebarLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +61,7 @@ export const SidebarLink = styled(LinkS)`
   list-style: none;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  color: #000;
+  color: ${({ active }) => (active ? "#444444" : "#000")};
   cursor: pointer;
 
   &:hover {

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TeamsContainer = styled.div`
   height: 40em;
   width: 100vw;
-  background-color: #f5efed;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +35,7 @@ export const TeamsBox = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-family: 2em;
+  font-family: lora;
   font-weight: 700;
 `;
 
@@ -58,6 +58,7 @@ export const Img = styled.img`
 `;
 
 export const TeamHeading = styled.h2`
+  font-family: lora;
   font-size: 1.5em;
   font-weight: 700;
   margin: 0.8em;

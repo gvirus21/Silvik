@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const CourseContainer = styled.div`
   width: 100vw;
   /* background-color: #c49991; */
-  background-color: lightgray;
-  position: relative;
+  background-color: #212223;
 `;
 
 export const CourseGrid = styled.div`
@@ -31,13 +30,15 @@ export const CourseDiv = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-family: 2em;
+  font-family: lora;
   font-weight: 700;
   padding: 2em;
   text-align: center;
+  color: White;
 `;
 
 export const CourseHeading = styled.h1`
+  font-family: lora;
   font-size: 1.6em;
   font-weight: 700;
   max-width: 10em;

@@ -7,6 +7,7 @@ import {
   MobileIcon,
   NavUl,
   NavLi,
+  NavLink,
 } from "./navStyledItems";
 
 import { FiMenu } from "react-icons/fi";
@@ -21,10 +22,18 @@ const Nav = ({ toggle }) => {
           <FiMenu />
         </MobileIcon>
         <NavUl>
-          <NavLi>Home</NavLi>
-          <NavLi>Courses</NavLi>
-          <NavLi>Team</NavLi>
-          <NavLi>Contact us</NavLi>
+          <NavLi>
+            <NavLink active={true}>Home</NavLink>
+          </NavLi>
+          <NavLi>
+            <NavLink>Courses</NavLink>
+          </NavLi>
+          <NavLi>
+            <NavLink>Team</NavLink>
+          </NavLi>
+          <NavLi>
+            <NavLink>Contact us</NavLink>
+          </NavLi>
         </NavUl>
       </NavContainer>
     </Navbar>
