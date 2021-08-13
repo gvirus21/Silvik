@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const TeamsContainer = styled.div`
-  height: 30em;
+  height: 40em;
   width: 100vw;
-  background-color: aliceblue;
+  background-color: #f5efed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
@@ -33,9 +34,14 @@ export const TeamsBox = styled.div`
   }
 `;
 
+export const Heading = styled.h1`
+  font-family: 2em;
+  font-weight: 700;
+`;
+
 export const TeamBox = styled.div`
   min-height: 22em;
-  min-width: 18em;
+  min-width: 15em;
   margin: 1em;
   background-color: #fff;
   box-shadow: 0px 2px 20px -10px rgba(0, 0, 0, 0.3);
@@ -47,7 +53,7 @@ export const TeamBox = styled.div`
 `;
 
 export const Img = styled.img`
-  height: 15em;
+  height: 12em;
   border-radius: 10px;
 `;
 
@@ -63,4 +69,5 @@ export const TeamRole = styled.p`
   font-weight: 300;
   color: #777;
   margin: 0 1em;
+  margin-bottom: 1em;
 `;

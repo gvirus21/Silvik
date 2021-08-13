@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const CourseContainer = styled.div`
   width: 100vw;
-  background-color: #c49991;
+  /* background-color: #c49991; */
+  background-color: lightgray;
+  position: relative;
 `;
 
 export const CourseGrid = styled.div`
@@ -13,6 +15,7 @@ export const CourseGrid = styled.div`
   grid-gap: 5em;
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
 `;
 export const CourseDiv = styled.div`
   height: 25em;
@@ -25,6 +28,13 @@ export const CourseDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+`;
+
+export const Heading = styled.h1`
+  font-family: 2em;
+  font-weight: 700;
+  padding: 2em;
+  text-align: center;
 `;
 
 export const CourseHeading = styled.h1`

@@ -1,6 +1,7 @@
 import React from "react";
 import {
   CourseContainer,
+  Heading,
   CourseGrid,
   CourseDiv,
   CourseHeading,
@@ -11,6 +12,7 @@ import {
 const CourseSection = () => {
   return (
     <CourseContainer>
+      <Heading>Our Courses</Heading>
       <CourseGrid>
         <CourseDiv>
           <CourseHeading>

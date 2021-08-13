@@ -3,6 +3,7 @@ import {
   TeamsContainer,
   TeamsBox,
   TeamBox,
+  Heading,
   Img,
   TeamHeading,
   TeamRole,
@@ -15,6 +16,7 @@ const Teams = () => {
   return (
     <>
       <TeamsContainer>
+        <Heading>Our Team</Heading>
         <TeamsBox>
           <TeamBox>
             <Img src={img1} />
